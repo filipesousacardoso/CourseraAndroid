@@ -1,0 +1,15 @@
+b)
+ActivityOne                                              ActivityTwo
+onCreate()->onStart()->onResume()->onPause()->onStop()-> onCreate()->onStart()->onResume()
+
+c)
+ActivityTwo           ActivityOne
+onPause()->onStop()-> onRestart()->onStart()->onResume()
+
+d)
+ActivityOne           ActivityTwo
+onPause()->onStop()-> onRestart()->onStart()->onResume()->onPause()->onStop()
+
+e)
+ActivityTwo
+onRestart()->onStart()->onResume()
